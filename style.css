@@ -1,0 +1,146 @@
+
+* {
+    user-select: none;
+}
+
+body {
+    background: url('./img/sea.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 70vh;
+}
+
+.blocks {
+    display: flex;
+    width: 470px;
+    flex-wrap: wrap;
+    cursor: crosshair;
+}
+
+
+.block {
+    background: skyblue;
+    border: 1px solid #006d9c;
+    width: 45px;
+    height: 45px;
+    color: red;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+
+.block:hover {
+    background: rgb(74, 153, 184);
+}
+
+.my-block.active {
+    background: orange;
+}
+
+.my-block.active:hover {
+ background: rgb(255, 189, 66);
+}
+
+
+.amount-enable-ships {
+    background: rgb(135, 235, 198);
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 845px;
+}
+
+.play {
+    padding: 20px 130px;
+    border-radius: 100px;
+    border: 1px solid #000;
+    background: yellow;
+    font-size: 40px;
+}
+
+button[disabled] {
+    background: rgb(210, 210, 210);
+    border: 1px solid #5f5f5f;
+    color: rgb(164, 164, 164);
+    cursor: not-allowed;
+}
+
+.blocks.active {
+    box-shadow: 0 0px 20px 12px white;
+}
+
+.ships-status {
+
+}
+.ships-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: lime;
+    padding: 5px;
+}
+.ships-status-img {
+    width: 100px;
+}
+
+.ships-status-my, .ships-status-pc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(156, 255, 90);
+    padding: 0 20px;
+    gap: 10px;
+}
+
+.ships-status span {
+    font-size: 36px;
+}
+
+.restart {
+    background: #0000005f;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.restart-button {
+    font-size: 36px;
+    padding: 14px 55px;
+    background: yellow;
+    border: none;
+    transition: 0.5s;
+}
+
+.restart-button:hover {
+    background: rgb(183, 255, 0);
+}
